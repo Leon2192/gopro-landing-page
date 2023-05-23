@@ -2,26 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.button-up {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 100px;
+  right: 40px;
+  background: gray;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.button-up:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #3abeff;
+}
+
+.alternative-navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagenes-hover {
+  display: flex;
+}
+
+.imagenes-hover-hide {
+  display: none;
+}
+
+.productos-navbar {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.productos-navbar img {
+  margin-left: 30px;
+}
+
+.enlace {
+  text-decoration: none;
+  list-style: none !important;
+  color: white;
 }

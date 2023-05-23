@@ -1,113 +1,491 @@
-import Image from 'next/image'
+"use client";
+
+import {
+  BsFacebook,
+  BsFillCartFill,
+  BsInstagram,
+  BsYoutube,
+} from "react-icons/bs";
+import {
+  Button,
+  Col,
+  Container,
+  Grid,
+  Navbar,
+  NextUIProvider,
+  Text,
+  createTheme,
+} from "@nextui-org/react";
+
+import Footer from "@/components/Footer";
+import Image from "next/image";
+import { useState } from "react";
+
+const darkTheme = createTheme({ type: "dark" });
 
 export default function Home() {
+  const [showCategories, setShowCategories] = useState(false);
+  const [showProductos, setShowProductos] = useState(false);
+
+  const productos = [
+    {
+      nombre: "Camaras",
+      url: "/camera.webp",
+    },
+    {
+      nombre: "Memorias",
+      url: "/memorias.png",
+    },
+    {
+      nombre: "Accesorios",
+      url: "/accesorios.png",
+    },
+    {
+      nombre: "Baterias",
+      url: "/baterias.png",
+    },
+    {
+      nombre: "Soporte",
+      url: "/soporte.png",
+    },
+  ];
+
+  const actividades = [
+    {
+      nombre: "Viajes",
+      url: "/actividades/viajes.jpeg",
+    },
+    {
+      nombre: "Montana",
+      url: "/actividades/montania.jpeg",
+    },
+    {
+      nombre: "Familia",
+      url: "/actividades/familia.jpeg",
+    },
+    {
+      nombre: "Surf ",
+      url: "/actividades/surf.jpg",
+    },
+    {
+      nombre: "Buceo",
+      url: "/actividades/buceo.jpeg",
+    },
+    {
+      nombre: "Extremo",
+      url: "/actividades/extremo.jpeg",
+    },
+    {
+      nombre: "Nieve",
+      url: "/actividades/snowboarding.jpeg",
+    },
+    {
+      nombre: "Bici",
+      url: "/actividades/bici.jpeg",
+    },
+    {
+      nombre: "Moto",
+      url: "/actividades/moto.jpg",
+    },
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <NextUIProvider theme={darkTheme}>
+      <Container xl css={{ width: "100%" }}>
+        {/*Navbar */}
+        <Navbar isCompact variant={"static"}>
+          <Navbar.Content hideIn="md">
+            <Navbar.Link href="#"> +54 11 2682 1502 (WhatsApp)</Navbar.Link>
+            <Navbar.Link href="#productos">
+              {" "}
+              +54 11 6034 4860 (WhatsApp 2)
+            </Navbar.Link>
+            <Navbar.Link href="#footer"> hola@gopro.com.ar</Navbar.Link>
+          </Navbar.Content>
+          <Navbar.Content>
+            <Navbar.Item>
+              <BsInstagram />
+            </Navbar.Item>
+            <Navbar.Item>
+              <BsFacebook />
+            </Navbar.Item>
+            <Navbar.Item>
+              <BsYoutube />
+            </Navbar.Item>
+          </Navbar.Content>
+        </Navbar>
+
+        <Navbar isCompact variant={"static"}>
+          <Navbar.Brand>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              width={175}
+              height={50}
+              src="/logo.png"
+              alt="Default Image"
+              objectFit="cover"
             />
-          </a>
-        </div>
-      </div>
+          </Navbar.Brand>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <Navbar.Content hideIn="md">
+            <Navbar.Link href="#">
+              {/* 
+                <a
+                className="enlace"
+                href=""
+                onMouseEnter={() => setShowProductos(true)}
+                onMouseLeave={() => setShowProductos(false)}
+              >
+                Productos
+              </a>
+  */}
+              Productos
+            </Navbar.Link>
+            <Navbar.Link href="#productos">
+              {/*
+              <a
+                className="enlace"
+                href=""
+                onMouseEnter={() => setShowCategories(true)}
+                onMouseLeave={() => setShowCategories(false)}
+              >
+                Por actividad
+              </a>
+             */}
+              Por actividad
+            </Navbar.Link>
+            <Navbar.Link href="#footer">Manuales</Navbar.Link>
+            <Navbar.Link href="#footer">Contacto</Navbar.Link>
+          </Navbar.Content>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          <Navbar.Content>
+            <Navbar.Link href="#">Ingresar</Navbar.Link>
+            <Navbar.Item>
+              <BsFillCartFill />
+            </Navbar.Item>
+          </Navbar.Content>
+        </Navbar>
+
+        {showProductos ? (
+          <div className="productos-navbar">
+            {productos.map((producto) => (
+              <img
+                key={producto.nombre}
+                src={producto.url}
+                width={120}
+                height={100}
+                alt=""
+              />
+            ))}
+          </div>
+        ) : null}
+
+        {showCategories ? (
+          <nav className="imagenes-hover">
+            {actividades.map((actividad) => (
+              <ul key={actividad.nombre}>
+                <img
+                  key={actividad.nombre}
+                  src={actividad.url}
+                  width={175}
+                  height={50}
+                  alt=""
+                />
+              </ul>
+            ))}
+          </nav>
+        ) : null}
+
+        {/*Jumbotron */}
+        <Grid.Container
+          justify="flex-start"
+          css={{
+            height: "900px",
+            width: "100%",
+            backgroundImage: "url(/hero.webp)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}>
+              <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
+                HERO 11
+              </Text>
+              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                La camara mas versatil del mundo
+              </Text>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                $ 296.999 *
+              </Text>
+              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                * Oferta en efectivo – Precio de lista: $ 329.999
+              </Text>
+              <Text weight={"bold"} size={40} css={{ textAlign: "center" }}>
+                12 cuotas fijas de $ 41.249,88 cada una
+              </Text>
+              <Col css={{ display: "flex", justifyContent: "center" }}>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px" }}
+                >
+                  Agregar al carrito
+                </Button>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                >
+                  Conoce mas
+                </Button>
+              </Col>
+            </Col>
+          </Grid>
+        </Grid.Container>
+        <Grid.Container
+          id="productos"
+          justify="flex-start"
+          css={{
+            height: "800px",
+            width: "100%",
+            backgroundImage: "url(/gopro.gif)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                HERO10
+              </Text>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                $ 265.499 *
+              </Text>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                * Oferta en efectivo – Precio de lista: $ 294.999
+              </Text>
+
+              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                12 cuotas fijas de $ 41.249,88 cada una
+              </Text>
+
+              <Col css={{ display: "flex", justifyContent: "center" }}>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px" }}
+                >
+                  Agregar al carrito
+                </Button>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                >
+                  Conoce mas
+                </Button>
+              </Col>
+            </Col>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container
+          justify="flex-start"
+          css={{
+            height: "700px",
+            width: "100%",
+            backgroundImage: "url(/bannerhero9.jpg)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                HERO9 Black
+              </Text>
+
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                $ 224.999 *
+              </Text>
+              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                * Oferta en efectivo – Precio de lista: $ 249.999
+              </Text>
+              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                12 cuotas fijas de $ 31.249,88 cada una
+              </Text>
+
+              <Col css={{ display: "flex", justifyContent: "center" }}>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px" }}
+                >
+                  Agregar al carrito
+                </Button>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                >
+                  Conoce mas
+                </Button>
+              </Col>
+            </Col>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container
+          justify="flex-start"
+          css={{
+            height: "500px",
+            width: "100%",
+            backgroundImage: "url(/sandisk.webp)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}></Col>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container
+          justify="flex-end"
+          css={{
+            height: "700px",
+            width: "100%",
+            backgroundImage: "url(/banner9.jpeg)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                MAX
+              </Text>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                $ 296.999 *
+              </Text>
+              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                * Oferta en efectivo – Precio de lista: $ 329.999
+              </Text>
+              <Text weight={"bold"} size={40} css={{ textAlign: "center" }}>
+                12 cuotas fijas de $ 41.249,88 cada una
+              </Text>
+              <Col css={{ display: "flex", justifyContent: "center" }}>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px" }}
+                >
+                  Agregar al carrito
+                </Button>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                >
+                  Conoce mas
+                </Button>
+              </Col>
+            </Col>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container
+          justify="flex-start"
+          css={{
+            height: "700px",
+            width: "100%",
+            backgroundImage: "url(/bannerhero08.jpg)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                HERO8 Black
+              </Text>
+              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                $ 206.999 *
+              </Text>
+              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                * Oferta en efectivo – Precio de lista: $ 229.999
+              </Text>
+              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                12 cuotas fijas de $ 28.749,88 cada una
+              </Text>
+              <Col css={{ display: "flex", justifyContent: "center" }}>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px" }}
+                >
+                  Agregar al carrito
+                </Button>
+                <Button
+                  size="md"
+                  shadow
+                  color="gradient"
+                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                >
+                  Conoce mas
+                </Button>
+              </Col>
+            </Col>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container
+          justify="center"
+          css={{
+            height: "500px",
+            width: "100%",
+            backgroundImage: "url(/bannerultimo.jpg)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <Grid xs={12} sm={6} alignItems="center">
+            <Col css={{ width: "100%" }}>
+              <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
+                COMPARAR CAMARAS
+              </Text>
+              <Button
+                size="md"
+                shadow
+                color="gradient"
+                css={{ width: "100%", marginTop: "10px" }}
+              >
+                Mas informacion
+              </Button>
+            </Col>
+          </Grid>
+        </Grid.Container>
+
+        {/*Footer */}
+        <Footer />
+      </Container>
+    </NextUIProvider>
+  );
 }
