@@ -8,12 +8,12 @@ const Footer = () => {
   const scrollUp = () => {
     var currentScroll = document.documentElement.scrollTop;
     console.log(currentScroll);
-    if (currentScroll > 0) {
+    /*if (currentScroll > 0) {
       window.scrollTo(0, 0);
-    }
+    }*/
   };
 
-  window.onscroll = function () {
+  /* window.onscroll = function () {
     console.log("Vertical: " + window.scrollY);
     if (window.scrollY > 200) {
       setShowArrow(true);
@@ -22,7 +22,7 @@ const Footer = () => {
     }
   };
 
-  console.log(window.scrollY);
+  console.log(window.scrollY);*/
 
   return (
     <footer
