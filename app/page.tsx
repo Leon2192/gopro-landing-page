@@ -342,105 +342,111 @@ export default function Home() {
             />
           </Grid>
         </Grid.Container>
-        <Grid.Container
-          id="productos"
-          justify="flex-start"
-          css={{
-            height: "800px",
-            width: "100%",
-            backgroundImage: "url(/gopro.gif)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                HERO10
-              </Text>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                $ 265.499 *
-              </Text>
 
-              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                * Oferta en efectivo – Precio de lista: $ 294.999
-              </Text>
+        <div className="banner-gif">
+          <Grid.Container
+            id="productos"
+            justify="flex-start"
+            css={{
+              height: "800px",
+              width: "100%",
+              backgroundImage: "url(/gopro.gif)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  HERO10
+                </Text>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  $ 265.499 *
+                </Text>
 
-              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                12 cuotas fijas de $ 41.249,88 cada una
-              </Text>
+                <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                  * Oferta en efectivo – Precio de lista: $ 294.999
+                </Text>
 
-              <Col css={{ display: "flex", justifyContent: "center" }}>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px" }}
-                >
-                  Agregar al carrito
-                </Button>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                >
-                  Conoce mas
-                </Button>
+                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                  12 cuotas fijas de $ 41.249,88 cada una
+                </Text>
+
+                <Col css={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px" }}
+                  >
+                    Agregar al carrito
+                  </Button>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                  >
+                    Conoce mas
+                  </Button>
+                </Col>
               </Col>
-            </Col>
-          </Grid>
-        </Grid.Container>
+            </Grid>
+          </Grid.Container>
+        </div>
 
-        <Grid.Container
-          justify="flex-start"
-          css={{
-            height: "700px",
-            width: "100%",
-            backgroundImage: "url(/bannerhero9.jpg)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                HERO9 Black
-              </Text>
+        <div className="banner-hero9">
+          <Grid.Container
+            justify="flex-start"
+            css={{
+              height: "700px",
+              width: "100%",
+              backgroundImage: "url(/bannerhero9.jpg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  HERO9 Black
+                </Text>
 
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                $ 224.999 *
-              </Text>
-              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                * Oferta en efectivo – Precio de lista: $ 249.999
-              </Text>
-              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                12 cuotas fijas de $ 31.249,88 cada una
-              </Text>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  $ 224.999 *
+                </Text>
+                <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                  * Oferta en efectivo – Precio de lista: $ 249.999
+                </Text>
+                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                  12 cuotas fijas de $ 31.249,88 cada una
+                </Text>
 
-              <Col css={{ display: "flex", justifyContent: "center" }}>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px" }}
-                >
-                  Agregar al carrito
-                </Button>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                >
-                  Conoce mas
-                </Button>
+                <Col css={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px" }}
+                  >
+                    Agregar al carrito
+                  </Button>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                  >
+                    Conoce mas
+                  </Button>
+                </Col>
               </Col>
-            </Col>
-          </Grid>
-        </Grid.Container>
+            </Grid>
+          </Grid.Container>
+        </div>
+
         <div className='sandisk-banner'>
           <Grid.Container
             justify="flex-start"
@@ -507,79 +513,81 @@ export default function Home() {
 
         </div>
 
-        <Grid.Container
-          justify="flex-start"
-          css={{
-            height: "700px",
-            width: "100%",
-            backgroundImage: "url(/bannerhero08.jpg)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                HERO8 Black
-              </Text>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                $ 206.999 *
-              </Text>
-              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                * Oferta en efectivo – Precio de lista: $ 229.999
-              </Text>
-              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                12 cuotas fijas de $ 28.749,88 cada una
-              </Text>
-              <Col css={{ display: "flex", justifyContent: "center" }}>
+        <div className="banners-finales">
+          <Grid.Container
+            justify="flex-start"
+            css={{
+              height: "700px",
+              width: "100%",
+              backgroundImage: "url(/bannerhero08.jpg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  HERO8 Black
+                </Text>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  $ 206.999 *
+                </Text>
+                <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
+                  * Oferta en efectivo – Precio de lista: $ 229.999
+                </Text>
+                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                  12 cuotas fijas de $ 28.749,88 cada una
+                </Text>
+                <Col css={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px" }}
+                  >
+                    Agregar al carrito
+                  </Button>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                  >
+                    Conoce mas
+                  </Button>
+                </Col>
+              </Col>
+            </Grid>
+          </Grid.Container>
+
+          <Grid.Container
+            justify="center"
+            css={{
+              height: "500px",
+              width: "100%",
+              backgroundImage: "url(/bannerultimo.jpg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}>
+                <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
+                  COMPARAR CAMARAS
+                </Text>
                 <Button
                   size="md"
                   shadow
                   color="gradient"
-                  css={{ width: "25%", marginTop: "10px" }}
+                  css={{ width: "100%", marginTop: "10px" }}
                 >
-                  Agregar al carrito
-                </Button>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                >
-                  Conoce mas
+                  Mas informacion
                 </Button>
               </Col>
-            </Col>
-          </Grid>
-        </Grid.Container>
-
-        <Grid.Container
-          justify="center"
-          css={{
-            height: "500px",
-            width: "100%",
-            backgroundImage: "url(/bannerultimo.jpg)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
-                COMPARAR CAMARAS
-              </Text>
-              <Button
-                size="md"
-                shadow
-                color="gradient"
-                css={{ width: "100%", marginTop: "10px" }}
-              >
-                Mas informacion
-              </Button>
-            </Col>
-          </Grid>
-        </Grid.Container>
+            </Grid>
+          </Grid.Container>
+        </div>
 
         {/*Footer */}
         <Footer />

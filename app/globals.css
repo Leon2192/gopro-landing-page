@@ -144,8 +144,20 @@
   .sandisk-banner {
     display: none;
   }
-  
-  .banner-inicial{
+
+  .banner-inicial {
+    display: none;
+  }
+
+  .banner-gif {
+    display: none;
+  }
+
+  .banner-hero9 {
+    display: none;
+  }
+
+  .banners-finales {
     display: none;
   }
 }
