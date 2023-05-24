@@ -144,4 +144,8 @@
   .sandisk-banner {
     display: none;
   }
+  
+  .banner-inicial{
+    display: none;
+  }
 }

@@ -251,50 +251,52 @@ export default function Home() {
         ) : null}
 
         {/*Jumbotron */}
-        <Grid.Container
-          justify="flex-start"
-          css={{
-            height: "900px",
-            width: "100%",
-            backgroundImage: "url(/bannerinicial.webp)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
-                HERO 11
-              </Text>
-              <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
-                Resistente, versátil y lista
-                para llevar la diversión al aire libre.
-              </Text>
-              <Text weight={"bold"} size={30} css={{ textAlign: "center", color: "#283618" }}>
-                $399.99  $499.99
-              </Text>
-              <Col css={{ display: "flex", justifyContent: "center" }}>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px" }}
-                >
-                  Agregar al carrito
-                </Button>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                >
-                  Conoce mas
-                </Button>
+        <div className="banner-inicial">
+          <Grid.Container
+            justify="flex-start"
+            css={{
+              height: "900px",
+              width: "100%",
+              backgroundImage: "url(/bannerinicial.webp)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}>
+                <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
+                  HERO 11
+                </Text>
+                <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
+                  Resistente, versátil y lista
+                  para llevar la diversión al aire libre.
+                </Text>
+                <Text weight={"bold"} size={30} css={{ textAlign: "center", color: "#283618" }}>
+                  $399.99  $499.99
+                </Text>
+                <Col css={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px" }}
+                  >
+                    Agregar al carrito
+                  </Button>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                  >
+                    Conoce mas
+                  </Button>
+                </Col>
               </Col>
-            </Col>
-          </Grid>
-        </Grid.Container>
+            </Grid>
+          </Grid.Container>
+        </div>
 
         { /* <Carousel /> */}
 
