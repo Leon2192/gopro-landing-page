@@ -289,7 +289,7 @@ export default function Home() {
           <h4 className='compra-carousel-title'>Comprar por actividad</h4>
           <Slider {...settings}>
             {actividades.map((item) => (
-              <div className="card-contain">
+              <div key={item.nombre} className="card-contain">
                 <div className="card-actividades">
                   <img className='img-actividades' width={275} height={275} src={item.url} alt="imagen" />
                 </div>
