@@ -26,6 +26,8 @@ import InfoCard from '@/components/InfoCard';
 import Slider from "react-slick";
 import { useState } from "react";
 
+;
+
 const darkTheme = createTheme({ type: "dark" });
 
 export default function Home() {
@@ -167,8 +169,8 @@ export default function Home() {
           </Navbar.Brand>
 
           <Navbar.Content hideIn="md">
-            <Navbar.Link href="#" onMouseEnter={() => setShowProductos(true)}
-              onMouseLeave={() => setShowProductos(false)}>
+
+            <Navbar.Link href="#">
               {/* 
                 <a
                 className="enlace"
@@ -179,8 +181,13 @@ export default function Home() {
                 Productos
               </a>
   */}
-              Productos
+              <h4
+                onMouseEnter={() => setShowProductos(true)}
+                onMouseLeave={() => setShowProductos(false)}
+              >Productos</h4>
             </Navbar.Link>
+
+
             <Navbar.Link href="#productos">
               {/*
               <a
@@ -192,10 +199,17 @@ export default function Home() {
                 Por actividad
               </a>
              */}
-              Por actividad
+              <h4
+                onMouseEnter={() => setShowCategories(true)}
+                onMouseLeave={() => setShowCategories(false)}
+              >Por actividad</h4>
             </Navbar.Link>
-            <Navbar.Link href="#footer">Manuales</Navbar.Link>
-            <Navbar.Link href="#footer">Contacto</Navbar.Link>
+            <Navbar.Link href="#footer">
+              <h4>Manuales</h4>
+            </Navbar.Link>
+            <Navbar.Link href="#footer">
+              <h4>Contacto</h4>
+            </Navbar.Link>
           </Navbar.Content>
 
           <Navbar.Content>
@@ -425,69 +439,71 @@ export default function Home() {
             </Col>
           </Grid>
         </Grid.Container>
+        <div className='sandisk-banner'>
+          <Grid.Container
+            justify="flex-start"
+            css={{
+              height: "500px",
+              width: "100%",
+              backgroundImage: "url(/sandisk.webp)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}></Col>
+            </Grid>
+          </Grid.Container>
 
-        <Grid.Container
-          justify="flex-start"
-          css={{
-            height: "500px",
-            width: "100%",
-            backgroundImage: "url(/sandisk.webp)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}></Col>
-          </Grid>
-        </Grid.Container>
-
-        <Grid.Container
-          justify="flex-end"
-          css={{
-            height: "700px",
-            width: "100%",
-            backgroundImage: "url(/banner9.jpeg)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Grid xs={12} sm={6} alignItems="center">
-            <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                MAX
-              </Text>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                $ 296.999 *
-              </Text>
-              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                * Oferta en efectivo – Precio de lista: $ 329.999
-              </Text>
-              <Text weight={"bold"} size={40} css={{ textAlign: "center" }}>
-                12 cuotas fijas de $ 41.249,88 cada una
-              </Text>
-              <Col css={{ display: "flex", justifyContent: "center" }}>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px" }}
-                >
-                  Agregar al carrito
-                </Button>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                >
-                  Conoce mas
-                </Button>
+          <Grid.Container
+            justify="flex-end"
+            css={{
+              height: "700px",
+              width: "100%",
+              backgroundImage: "url(/banner9.jpeg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <Grid xs={12} sm={6} alignItems="center">
+              <Col css={{ width: "100%" }}>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  MAX
+                </Text>
+                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
+                  $ 296.999 *
+                </Text>
+                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
+                  * Oferta en efectivo – Precio de lista: $ 329.999
+                </Text>
+                <Text weight={"bold"} size={40} css={{ textAlign: "center" }}>
+                  12 cuotas fijas de $ 41.249,88 cada una
+                </Text>
+                <Col css={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px" }}
+                  >
+                    Agregar al carrito
+                  </Button>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                  >
+                    Conoce mas
+                  </Button>
+                </Col>
               </Col>
-            </Col>
-          </Grid>
-        </Grid.Container>
+            </Grid>
+          </Grid.Container>
+
+        </div>
 
         <Grid.Container
           justify="flex-start"

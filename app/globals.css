@@ -74,7 +74,7 @@
   color: white;
 }
 
-.cards-actividades{
+.cards-actividades {
   height: 400px;
   background: #F3F3F3;
   padding: 25px 28px;
@@ -84,39 +84,39 @@
   width: 100%;
 }
 
-.author{
+.author {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.author h3{
-  font-size: var(--fs-20) ;
+.author h3 {
+  font-size: var(--fs-20);
 }
 
-.author p{
+.author p {
   line-height: 1.68;
   font-size: 17px;
 }
 
-.carousel-text{
+.carousel-text {
   font-size: 32px;
   text-align: center;
   margin-bottom: 55px;
   margin-top: 125px;
 }
 
-.carousel-container{
+.carousel-container {
   display: flex;
   width: 100%;
 }
 
-.cont-cards{
+.cont-cards {
   width: '100%';
   display: flex;
 }
 
-.card-container{
+.card-container {
   display: flex;
 }
 
@@ -131,11 +131,17 @@
   font-size: 37px;
 }
 
-.compra-carousel-text{
+.compra-carousel-text {
   text-align: left;
   font-size: 20px;
 }
 
-.img-actividades{
+.img-actividades {
   border-radius: 30px;
+}
+
+@media (max-width: 650px) {
+  .sandisk-banner {
+    display: none;
+  }
 }
