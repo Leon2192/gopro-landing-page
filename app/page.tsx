@@ -20,7 +20,6 @@ import {
   createTheme,
 } from "@nextui-org/react";
 
-import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import InfoCard from '@/components/InfoCard';
