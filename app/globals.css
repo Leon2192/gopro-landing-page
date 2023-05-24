@@ -73,3 +73,69 @@
   list-style: none !important;
   color: white;
 }
+
+.cards-actividades{
+  height: 400px;
+  background: #F3F3F3;
+  padding: 25px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.author{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.author h3{
+  font-size: var(--fs-20) ;
+}
+
+.author p{
+  line-height: 1.68;
+  font-size: 17px;
+}
+
+.carousel-text{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 125px;
+}
+
+.carousel-container{
+  display: flex;
+  width: 100%;
+}
+
+.cont-cards{
+  width: '100%';
+  display: flex;
+}
+
+.card-container{
+  display: flex;
+}
+
+.container-slider {
+  height: 350px;
+}
+
+.compra-carousel-title {
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 27px;
+  font-size: 37px;
+}
+
+.compra-carousel-text{
+  text-align: left;
+  font-size: 20px;
+}
+
+.img-actividades{
+  border-radius: 30px;
+}

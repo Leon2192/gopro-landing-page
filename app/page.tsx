@@ -1,5 +1,8 @@
 "use client";
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import {
   BsFacebook,
   BsFillCartFill,
@@ -17,8 +20,11 @@ import {
   createTheme,
 } from "@nextui-org/react";
 
+import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import InfoCard from '@/components/InfoCard';
+import Slider from "react-slick";
 import { useState } from "react";
 
 const darkTheme = createTheme({ type: "dark" });
@@ -26,6 +32,41 @@ const darkTheme = createTheme({ type: "dark" });
 export default function Home() {
   const [showCategories, setShowCategories] = useState(false);
   const [showProductos, setShowProductos] = useState(false);
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   const productos = [
     {
@@ -127,7 +168,8 @@ export default function Home() {
           </Navbar.Brand>
 
           <Navbar.Content hideIn="md">
-            <Navbar.Link href="#">
+            <Navbar.Link href="#" onMouseEnter={() => setShowProductos(true)}
+              onMouseLeave={() => setShowProductos(false)}>
               {/* 
                 <a
                 className="enlace"
@@ -201,7 +243,7 @@ export default function Home() {
           css={{
             height: "900px",
             width: "100%",
-            backgroundImage: "url(/hero.webp)",
+            backgroundImage: "url(/bannerinicial.webp)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -209,20 +251,15 @@ export default function Home() {
         >
           <Grid xs={12} sm={6} alignItems="center">
             <Col css={{ width: "100%" }}>
-              <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
+              <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
                 HERO 11
               </Text>
-              <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                La camara mas versatil del mundo
+              <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
+                Resistente, versátil y lista
+                para llevar la diversión al aire libre.
               </Text>
-              <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                $ 296.999 *
-              </Text>
-              <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                * Oferta en efectivo – Precio de lista: $ 329.999
-              </Text>
-              <Text weight={"bold"} size={40} css={{ textAlign: "center" }}>
-                12 cuotas fijas de $ 41.249,88 cada una
+              <Text weight={"bold"} size={30} css={{ textAlign: "center", color: "#283618" }}>
+                $399.99  $499.99
               </Text>
               <Col css={{ display: "flex", justifyContent: "center" }}>
                 <Button
@@ -245,6 +282,51 @@ export default function Home() {
             </Col>
           </Grid>
         </Grid.Container>
+
+        { /* <Carousel /> */}
+
+        <div className="container-slider">
+          <h4 className='compra-carousel-title'>Comprar por actividad</h4>
+          <Slider {...settings}>
+            {actividades.map((item) => (
+              <div className="card-contain">
+                <div className="card-actividades">
+                  <img className='img-actividades' width={275} height={275} src={item.url} alt="imagen" />
+                </div>
+              </div>
+
+            ))}
+          </Slider>
+        </div>
+
+
+        { /*Displaying Product Cards */}
+        <Grid.Container gap={2}>
+          <Grid xs={12} sm={4}>
+            <InfoCard
+              label='Camara'
+              title='HERO 9 Black'
+              imageURL='/accesorios.png'
+
+            />
+          </Grid>
+          <Grid xs={12} sm={4}>
+            <InfoCard
+              label='Soporte'
+              title='Soporte B9'
+              imageURL='/soporte.png'
+
+            />
+          </Grid>
+          <Grid xs={12} sm={4}>
+            <InfoCard
+              label='Camara'
+              title='HERO 11 Black'
+              imageURL='/hero111.png'
+
+            />
+          </Grid>
+        </Grid.Container>
         <Grid.Container
           id="productos"
           justify="flex-start"
@@ -262,7 +344,6 @@ export default function Home() {
               <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
                 HERO10
               </Text>
-
               <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
                 $ 265.499 *
               </Text>
