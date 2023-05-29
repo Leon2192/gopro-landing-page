@@ -133,7 +133,7 @@ export default function Home() {
 
   return (
     <NextUIProvider theme={darkTheme}>
-      <Container xl css={{ width: "100%" }}>
+      <Container xl css={{ width: "100%", marginTop: '22px' }}>
         {showProductos ? (
           <div className="productos-navbar">
             {productos.map((producto) => (
