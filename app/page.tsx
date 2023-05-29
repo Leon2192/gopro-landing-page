@@ -20,6 +20,7 @@ import {
   createTheme,
 } from "@nextui-org/react";
 
+import CardsBanner from '@/components/CardsBanner';
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import InfoCard from '@/components/InfoCard';
@@ -220,34 +221,60 @@ export default function Home() {
           </Slider>
         </div>
 
+        <Grid.Container gap={2} style={{
+          marginBottom: '22px'
+        }}>
+          <Grid xs={12} sm={6}>
+            <CardsBanner
+              label='Hollywood al alcance de tu mano.'
+              title=''
+              imageURL='/hero11blackbanner.webp'
+
+            />
+          </Grid>
+          <Grid xs={12} sm={6}>
+
+            <CardsBanner
+              label='Más pequeña. Más sencilla. El mismo rendimiento.'
+              title=''
+              imageURL='/hero11blackminibanner.webp'
+
+            />
+          </Grid>
+
+        </Grid.Container>
+
 
         { /*Displaying Product Cards */}
-        <Grid.Container gap={2}>
-          <Grid xs={12} sm={4}>
-            <InfoCard
-              label='Camara'
-              title='HERO 9 Black'
-              imageURL='/accesorios.png'
-
-            />
-          </Grid>
-          <Grid xs={12} sm={4}>
-            <InfoCard
-              label='Soporte'
-              title='Soporte B9'
-              imageURL='/soporte.png'
-
-            />
-          </Grid>
-          <Grid xs={12} sm={4}>
-            <InfoCard
-              label='Camara'
-              title='HERO 11 Black'
-              imageURL='/hero111.png'
-
-            />
-          </Grid>
-        </Grid.Container>
+        {
+          /*
+            <Grid.Container gap={2}>
+            <Grid xs={12} sm={4}>
+              <InfoCard
+                label='Camara'
+                title='HERO 9 Black'
+                imageURL='/accesorios.png'
+  
+              />
+            </Grid>
+            <Grid xs={12} sm={4}>
+              <InfoCard
+                label='Soporte'
+                title='Soporte B9'
+                imageURL='/soporte.png'
+  
+              />
+            </Grid>
+            <Grid xs={12} sm={4}>
+              <InfoCard
+                label='Camara'
+                title='HERO 11 Black'
+                imageURL='/hero111.png'
+  
+              />
+            </Grid>
+          </Grid.Container> */
+        }
 
         <div className="banner-gif">
           <Grid.Container
@@ -297,7 +324,10 @@ export default function Home() {
           </Grid.Container>
         </div>
 
-        <div className="banner-hero9">
+
+
+        {/*
+<div className="banner-hero9">
           <Grid.Container
             justify="flex-start"
             css={{
@@ -345,23 +375,26 @@ export default function Home() {
             </Grid>
           </Grid.Container>
         </div>
-
+ */}
         <div className='sandisk-banner'>
-          <Grid.Container
-            justify="flex-start"
-            css={{
-              height: "500px",
-              width: "100%",
-              backgroundImage: "url(/sandisk.webp)",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <Grid xs={12} sm={6} alignItems="center">
-              <Col css={{ width: "100%" }}></Col>
-            </Grid>
-          </Grid.Container>
+          {
+            /*
+             <Grid.Container
+                      justify="flex-start"
+                      css={{
+                        height: "500px",
+                        width: "100%",
+                        backgroundImage: "url(/sandisk.webp)",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    >
+                      <Grid xs={12} sm={6} alignItems="center">
+                        <Col css={{ width: "100%" }}></Col>
+                      </Grid>
+                    </Grid.Container> */
+          }
 
           <Grid.Container
             justify="flex-end"
