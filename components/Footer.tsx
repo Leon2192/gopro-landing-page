@@ -115,7 +115,7 @@ const Footer = () => {
                 <Image
                   width={175}
                   height={50}
-                  src="/logonuevo.png"
+                  src="/logo.png"
                   alt="Default Image"
                   objectFit="cover"
                 />
