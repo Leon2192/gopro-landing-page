@@ -38,7 +38,7 @@ const Header = () => {
           <Image
             width={130}
             height={50}
-            src="/logonuevo.png"
+            src="/logo.png"
             alt="Default Image"
             objectFit="cover"
           />
