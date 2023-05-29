@@ -41,7 +41,7 @@ const page = () => {
                 <Grid.Container gap={2}>
                     {productos.map((producto) => {
                         return (
-                            <Grid xs={12} sm={4}>
+                            <Grid xs={12} sm={4} key={producto.nombre}>
                                 <InfoCard
                                     label={producto.label}
                                     title={producto.nombre}
