@@ -134,92 +134,6 @@ export default function Home() {
   return (
     <NextUIProvider theme={darkTheme}>
       <Container xl css={{ width: "100%" }}>
-        {/*Navbar */}
-        <Navbar isCompact variant={"static"}>
-          <Navbar.Content hideIn="md">
-            <Navbar.Link href="#"> +54 11 2682 1502 (WhatsApp)</Navbar.Link>
-            <Navbar.Link href="#productos">
-              {" "}
-              +54 11 6034 4860 (WhatsApp 2)
-            </Navbar.Link>
-            <Navbar.Link href="#footer"> hola@gopro.com.ar</Navbar.Link>
-          </Navbar.Content>
-          <Navbar.Content>
-            <Navbar.Item>
-              <BsInstagram />
-            </Navbar.Item>
-            <Navbar.Item>
-              <BsFacebook />
-            </Navbar.Item>
-            <Navbar.Item>
-              <BsYoutube />
-            </Navbar.Item>
-          </Navbar.Content>
-        </Navbar>
-
-        <Navbar isCompact variant={"static"}>
-          <Navbar.Brand>
-            <Image
-              width={175}
-              height={50}
-              src="/logo.png"
-              alt="Default Image"
-              objectFit="cover"
-            />
-          </Navbar.Brand>
-
-          <Navbar.Content hideIn="md">
-
-            <Navbar.Link href="#">
-              {/* 
-                <a
-                className="enlace"
-                href=""
-                onMouseEnter={() => setShowProductos(true)}
-                onMouseLeave={() => setShowProductos(false)}
-              >
-                Productos
-              </a>
-  */}
-              <h4
-                onMouseEnter={() => setShowProductos(true)}
-                onMouseLeave={() => setShowProductos(false)}
-              >Productos</h4>
-            </Navbar.Link>
-
-
-            <Navbar.Link href="#productos">
-              {/*
-              <a
-                className="enlace"
-                href=""
-                onMouseEnter={() => setShowCategories(true)}
-                onMouseLeave={() => setShowCategories(false)}
-              >
-                Por actividad
-              </a>
-             */}
-              <h4
-                onMouseEnter={() => setShowCategories(true)}
-                onMouseLeave={() => setShowCategories(false)}
-              >Por actividad</h4>
-            </Navbar.Link>
-            <Navbar.Link href="#footer">
-              <h4>Manuales</h4>
-            </Navbar.Link>
-            <Navbar.Link href="#footer">
-              <h4>Contacto</h4>
-            </Navbar.Link>
-          </Navbar.Content>
-
-          <Navbar.Content>
-            <Navbar.Link href="#">Ingresar</Navbar.Link>
-            <Navbar.Item>
-              <BsFillCartFill />
-            </Navbar.Item>
-          </Navbar.Content>
-        </Navbar>
-
         {showProductos ? (
           <div className="productos-navbar">
             {productos.map((producto) => (
@@ -588,9 +502,6 @@ export default function Home() {
             </Grid>
           </Grid.Container>
         </div>
-
-        {/*Footer */}
-        <Footer />
       </Container>
     </NextUIProvider>
   );

@@ -1,6 +1,9 @@
 import "./globals.css";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { Poppins } from "next/font/google";
+import { createTheme } from "@nextui-org/react";
 
 const poppins = Poppins({
   weight: "700",
@@ -17,9 +20,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Header />
         {children}
         <a
           href="https://api.whatsapp.com/send?phone=541127682286"
@@ -28,6 +34,7 @@ export default function RootLayout({
         >
           <img src="/whatsapp.png" alt="logowhatsapp" />
         </a>
+        <Footer />
       </body>
     </html>
   );
