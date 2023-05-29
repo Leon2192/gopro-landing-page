@@ -21,33 +21,24 @@ const CardsBanner: NextPage<Props> = (props) => {
                 </Col>
             </Card.Header>
             <Card.Image src={imageURL} />
-            <Card.Footer isBlurred css={{
-                position: 'absolute',
-                bgBlur: '#f111466',
-                bottom: 0
-            }}>
+            <Col css={{ width: "100%", marginLeft: '33px' }}>
+                <Text weight={"bold"} size={20} css={{ textAlign: "center", }}>
+                    {label}
+                </Text>
 
-                <Col css={{ width: "100%", marginLeft: '33px' }}>
-                    <Text weight={"bold"} size={20} css={{ textAlign: "center", }}>
-                        {label}
-                    </Text>
-
-                    <Col css={{ display: "flex", justifyContent: "center" }}>
-                        <Button
-                            style={{
-                                background: 'black'
-                            }}
-                            shadow
-                            size="md"
-                            css={{ width: "25%", marginTop: "10px" }}
-                        >
-                            Comprar ahora
-                        </Button>
-
-                    </Col>
+                <Col css={{ display: "flex", justifyContent: "center", marginBottom: '22px', marginTop: '22px' }}>
+                    <Button
+                        style={{
+                            background: 'black'
+                        }}
+                        shadow
+                        size="md"
+                        css={{ width: "25%", marginTop: "10px" }}
+                    >
+                        Comprar ahora
+                    </Button>
                 </Col>
-
-            </Card.Footer>
+            </Col>
         </Card>
     )
 
