@@ -11,27 +11,28 @@ const Header = () => {
   return (
     <div>
       {/*Navbar */}
-      <Navbar variant={"static"}>
-        <Navbar.Content hideIn="md">
-          <Navbar.Link href="#"> +54 11 2682 1502 (WhatsApp)</Navbar.Link>
-          <Navbar.Link href="#productos">
-            {" "}
-            +54 11 6034 4860 (WhatsApp 2)
-          </Navbar.Link>
-          <Navbar.Link href="#footer"> hola@gopro.com.ar</Navbar.Link>
-        </Navbar.Content>
-        <Navbar.Content>
-          <Navbar.Item>
-            <BsInstagram />
-          </Navbar.Item>
-          <Navbar.Item>
-            <BsFacebook />
-          </Navbar.Item>
-          <Navbar.Item>
-            <BsYoutube />
-          </Navbar.Item>
-        </Navbar.Content>
-      </Navbar>
+      {
+        <Navbar variant={"static"}>
+          <Navbar.Content hideIn="md">
+            <Navbar.Link href="#"> </Navbar.Link>
+            <Navbar.Link href="#productos">
+              {" "}
+
+            </Navbar.Link>
+            <Navbar.Link href="#footer"> </Navbar.Link>
+          </Navbar.Content>
+          <Navbar.Content>
+            <Navbar.Item>
+              <BsInstagram />
+            </Navbar.Item>
+            <Navbar.Item>
+              <BsFacebook />
+            </Navbar.Item>
+            <Navbar.Item>
+              <BsYoutube />
+            </Navbar.Item>
+          </Navbar.Content>
+        </Navbar>}
 
       <Navbar isCompact variant={"static"}>
         <Navbar.Brand>

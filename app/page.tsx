@@ -178,34 +178,26 @@ export default function Home() {
             }}
           >
             <Grid xs={12} sm={6} alignItems="center">
-              <Col css={{ width: "100%" }}>
-                <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
+              <Col css={{ width: "100%", marginLeft: '33px' }}>
+                <Text weight={"bold"} size={50} css={{ textAlign: "start", color: "#283618" }}>
                   HERO 11
                 </Text>
-                <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "#283618" }}>
+                <Text weight={"bold"} size={50} css={{ textAlign: "start", color: "#283618" }}>
                   Resistente, versátil y lista
                   para llevar la diversión al aire libre.
                 </Text>
-                <Text weight={"bold"} size={30} css={{ textAlign: "center", color: "#283618" }}>
-                  $399.99  $499.99
-                </Text>
-                <Col css={{ display: "flex", justifyContent: "center" }}>
+
+                <Col css={{ display: "flex", justifyContent: "start" }}>
                   <Button
+                    style={{
+                      background: 'black'
+                    }}
                     size="md"
-                    shadow
-                    color="gradient"
                     css={{ width: "25%", marginTop: "10px" }}
                   >
-                    Agregar al carrito
+                    Comprar la HERO11
                   </Button>
-                  <Button
-                    size="md"
-                    shadow
-                    color="gradient"
-                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                  >
-                    Conoce mas
-                  </Button>
+
                 </Col>
               </Col>
             </Grid>
@@ -275,31 +267,26 @@ export default function Home() {
                 <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
                   HERO10
                 </Text>
-                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                  $ 265.499 *
-                </Text>
-
-                <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                  * Oferta en efectivo – Precio de lista: $ 294.999
-                </Text>
 
                 <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                  12 cuotas fijas de $ 41.249,88 cada una
+                  El doble de velocidad. Más fácil.
                 </Text>
 
                 <Col css={{ display: "flex", justifyContent: "center" }}>
                   <Button
+                    style={{
+                      background: 'black'
+                    }}
                     size="md"
-                    shadow
-                    color="gradient"
                     css={{ width: "25%", marginTop: "10px" }}
                   >
                     Agregar al carrito
                   </Button>
                   <Button
+                    style={{
+                      background: 'black'
+                    }}
                     size="md"
-                    shadow
-                    color="gradient"
                     css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
                   >
                     Conoce mas
@@ -328,21 +315,17 @@ export default function Home() {
                   HERO9 Black
                 </Text>
 
-                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                  $ 224.999 *
-                </Text>
-                <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                  * Oferta en efectivo – Precio de lista: $ 249.999
-                </Text>
-                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                  12 cuotas fijas de $ 31.249,88 cada una
+                <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
+                  Rendimiento legendario
                 </Text>
 
                 <Col css={{ display: "flex", justifyContent: "center" }}>
                   <Button
-                    size="md"
+                    style={{
+                      background: 'black'
+                    }}
                     shadow
-                    color="gradient"
+                    size="md"
                     css={{ width: "25%", marginTop: "10px" }}
                   >
                     Agregar al carrito
@@ -350,7 +333,9 @@ export default function Home() {
                   <Button
                     size="md"
                     shadow
-                    color="gradient"
+                    style={{
+                      background: 'black'
+                    }}
                     css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
                   >
                     Conoce mas
@@ -394,20 +379,17 @@ export default function Home() {
                 <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
                   MAX
                 </Text>
-                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                  $ 296.999 *
-                </Text>
-                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                  * Oferta en efectivo – Precio de lista: $ 329.999
-                </Text>
                 <Text weight={"bold"} size={40} css={{ textAlign: "center" }}>
-                  12 cuotas fijas de $ 41.249,88 cada una
+                  La cámara más versátil del mundo, al 11.
                 </Text>
+
                 <Col css={{ display: "flex", justifyContent: "center" }}>
                   <Button
                     size="md"
                     shadow
-                    color="gradient"
+                    style={{
+                      background: 'black'
+                    }}
                     css={{ width: "25%", marginTop: "10px" }}
                   >
                     Agregar al carrito
@@ -415,7 +397,9 @@ export default function Home() {
                   <Button
                     size="md"
                     shadow
-                    color="gradient"
+                    style={{
+                      background: 'black'
+                    }}
                     css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
                   >
                     Conoce mas
@@ -428,6 +412,7 @@ export default function Home() {
         </div>
 
         <div className="banners-finales">
+          {/*
           <Grid.Container
             justify="flex-start"
             css={{
@@ -439,41 +424,7 @@ export default function Home() {
               backgroundPosition: "center",
             }}
           >
-            <Grid xs={12} sm={6} alignItems="center">
-              <Col css={{ width: "100%" }}>
-                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                  HERO8 Black
-                </Text>
-                <Text weight={"bold"} size={70} css={{ textAlign: "center" }}>
-                  $ 206.999 *
-                </Text>
-                <Text weight={"bold"} size={20} css={{ textAlign: "center" }}>
-                  * Oferta en efectivo – Precio de lista: $ 229.999
-                </Text>
-                <Text weight={"bold"} size={30} css={{ textAlign: "center" }}>
-                  12 cuotas fijas de $ 28.749,88 cada una
-                </Text>
-                <Col css={{ display: "flex", justifyContent: "center" }}>
-                  <Button
-                    size="md"
-                    shadow
-                    color="gradient"
-                    css={{ width: "25%", marginTop: "10px" }}
-                  >
-                    Agregar al carrito
-                  </Button>
-                  <Button
-                    size="md"
-                    shadow
-                    color="gradient"
-                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                  >
-                    Conoce mas
-                  </Button>
-                </Col>
-              </Col>
-            </Grid>
-          </Grid.Container>
+          </Grid.Container> */}
 
           <Grid.Container
             justify="center"
