@@ -35,13 +35,15 @@ const Header = () => {
 
       <Navbar isCompact variant={"static"}>
         <Navbar.Brand>
-          <Image
-            width={130}
-            height={50}
-            src="/logoprueba.png"
-            alt="Default Image"
-            objectFit="cover"
-          />
+          <Link href={'/'}>
+            <Image
+              width={130}
+              height={50}
+              src="/logoprueba.png"
+              alt="Default Image"
+              objectFit="cover"
+            />
+          </Link>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
 
