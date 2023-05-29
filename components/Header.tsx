@@ -38,7 +38,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link href={'/'}>
             <Image
-              width={130}
+              width={190}
               height={50}
               src="/logoprueba.png"
               alt="Default Image"
