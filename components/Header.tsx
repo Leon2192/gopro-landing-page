@@ -1,15 +1,17 @@
 'use client'
 
 import { BsFacebook, BsFillCartFill, BsInstagram, BsYoutube } from 'react-icons/bs'
+import { Container, Navbar } from '@nextui-org/react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Navbar } from '@nextui-org/react'
 import React from 'react'
 
 const Header = () => {
   return (
-    <div>
+    <Container xl css={{
+      width: '100%'
+    }}>
       {/*Navbar */}
       {
         <Navbar variant={"static"}>
@@ -84,7 +86,7 @@ const Header = () => {
           </Navbar.Item>
         </Navbar.Content>
       </Navbar>
-    </div>
+    </Container>
   )
 }
 

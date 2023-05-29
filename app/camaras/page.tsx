@@ -14,7 +14,7 @@ const page = () => {
         <div>
             { /*Displaying Product Cards */}
             <Grid.Container gap={2} css={{
-                marginTop: '33pz'
+                marginTop: '33px'
             }}>
                 <Grid xs={12} sm={6}>
                     <InfoCard
