@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div>
       {/*Navbar */}
-      <Navbar isCompact variant={"static"}>
+      <Navbar variant={"static"}>
         <Navbar.Content hideIn="md">
           <Navbar.Link href="#"> +54 11 2682 1502 (WhatsApp)</Navbar.Link>
           <Navbar.Link href="#productos">
@@ -36,9 +36,9 @@ const Header = () => {
       <Navbar isCompact variant={"static"}>
         <Navbar.Brand>
           <Image
-            width={175}
+            width={130}
             height={50}
-            src="/logo.png"
+            src="/logonuevo.png"
             alt="Default Image"
             objectFit="cover"
           />
