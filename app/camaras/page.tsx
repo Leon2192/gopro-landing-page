@@ -28,7 +28,7 @@ const page = () => {
                 <Grid xs={12} sm={6}>
                     <Col css={{ width: "100%" }}>
                         <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "white" }}>
-                            HERO 11 Black
+                            HERO 11 Black Mini
                         </Text>
                         <Text weight={"bold"} size={40} css={{ textAlign: "center", color: "white" }}>
                             Más pequeña. Más sencilla. El mismo rendimiento.
@@ -85,13 +85,14 @@ const page = () => {
                 <Grid xs={12} sm={6}>
                     <Col css={{ width: "100%" }}>
                         <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "white" }}>
-                            HERO 11 Black
+                            HERO 11
                         </Text>
                         <Text weight={"bold"} size={40} css={{ textAlign: "center", color: "white" }}>
-                            Más pequeña. Más sencilla. El mismo rendimiento.
+                            HERO11
+                            La cámara más versátil del mundo, al 11.
                         </Text>
                         <Text weight={"bold"} size={20} css={{ textAlign: "center", color: "white", marginBottom: '30px' }}>
-                            La potencia de la HERO11 Black, ahora más pequeña, ligera y sencilla.
+                            Un nuevo sensor de imagen más grande captura los vídeos más envolventes hasta la fecha.
                         </Text>
                         <Col css={{ display: "flex", justifyContent: 'space-around', marginBottom: '30px' }}>
                             <BsFilm size={'4em'} />
@@ -106,9 +107,7 @@ const page = () => {
                         </Col>
 
                         <Col css={{ display: "flex", justifyContent: 'space-around', marginBottom: '30px' }}>
-                            <Text weight={"bold"} size={20} css={{ textAlign: "center", color: "white" }}>
-                                Más pequeña. Más sencilla. El mismo rendimiento.
-                            </Text>
+
 
                         </Col>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
@@ -159,13 +158,13 @@ const page = () => {
                 <Grid xs={12} sm={6}>
                     <Col css={{ width: "100%" }}>
                         <Text weight={"bold"} size={50} css={{ textAlign: "center", color: "white" }}>
-                            HERO 11 Black
+                            HERO10
                         </Text>
                         <Text weight={"bold"} size={40} css={{ textAlign: "center", color: "white" }}>
-                            Más pequeña. Más sencilla. El mismo rendimiento.
+                            Más velocidad. Más fácil.
                         </Text>
                         <Text weight={"bold"} size={20} css={{ textAlign: "center", color: "white", marginBottom: '30px' }}>
-                            La potencia de la HERO11 Black, ahora más pequeña, ligera y sencilla.
+                            Diseño icónico, duradero y versátil, con increíbles capturas en 5,3K.
                         </Text>
                         <Col css={{ display: "flex", justifyContent: 'space-around', marginBottom: '30px' }}>
                             <BsFilm size={'4em'} />
@@ -180,9 +179,7 @@ const page = () => {
                         </Col>
 
                         <Col css={{ display: "flex", justifyContent: 'space-around', marginBottom: '30px' }}>
-                            <Text weight={"bold"} size={20} css={{ textAlign: "center", color: "white" }}>
-                                Más pequeña. Más sencilla. El mismo rendimiento.
-                            </Text>
+
 
                         </Col>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
