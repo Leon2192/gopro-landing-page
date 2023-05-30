@@ -31,6 +31,7 @@ const InfoCard: NextPage<Props> = (props) => {
                 bgBlur: '#f111466',
                 bottom: 0
             }}>
+                {/*
                 <Row>
                     <Col>
                         <Text color='#d1d1d1' size={18}>Producto destacado </Text>
@@ -45,7 +46,7 @@ const InfoCard: NextPage<Props> = (props) => {
                             </Button>
                         </Row>
                     </Col>
-                </Row>
+                </Row> */}
             </Card.Footer>
         </Card>
     )
