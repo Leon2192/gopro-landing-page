@@ -216,7 +216,9 @@ export default function Home() {
             {actividades.map((item) => (
               <div key={item.nombre} className="card-contain">
                 <div className="card-actividades">
-                  <img className='img-actividades' width={275} height={275} src={item.url} alt="imagen" />
+                  <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                    <img className='img-actividades' width={275} height={275} src={item.url} alt="imagen" />
+                  </Link>
                 </div>
               </div>
 
