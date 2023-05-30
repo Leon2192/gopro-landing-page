@@ -24,15 +24,15 @@ const Header = () => {
             <Navbar.Link href="#footer"> </Navbar.Link>
           </Navbar.Content>
           <Navbar.Content>
-            <Navbar.Item>
+            <Link href='https://www.instagram.com/gopro/'>
               <BsInstagram />
-            </Navbar.Item>
-            <Navbar.Item>
+            </Link>
+            <Link href='https://www.facebook.com/gopro'>
               <BsFacebook />
-            </Navbar.Item>
-            <Navbar.Item>
+            </Link>
+            <Link href='https://www.youtube.com/user/GoProCamera'>
               <BsYoutube />
-            </Navbar.Item>
+            </Link>
           </Navbar.Content>
         </Navbar>}
 
