@@ -62,6 +62,13 @@ const Header = () => {
             Aplicaciones
           </Link>
 
+          <Link href={'https://www.shopnow.com.ar/listado/camaras-accesorios/'} style={{
+            color: 'white'
+          }}>
+            Productos
+          </Link>
+
+          {/*
           <Link href={'/accesorios'} style={{
             color: 'white'
           }}>
@@ -71,7 +78,7 @@ const Header = () => {
             color: 'white'
           }}>
             Complementos de ocio
-          </Link>
+          </Link> */}
           <Link href={'/actividad'} style={{
             color: 'white'
           }}>

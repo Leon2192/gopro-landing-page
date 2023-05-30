@@ -1,5 +1,6 @@
 import { Button, Card, Col, Row, Text } from '@nextui-org/react'
 
+import Link from 'next/link';
 import type { NextPage } from "next";
 
 interface Props {
@@ -29,8 +30,18 @@ const GlobalCard: NextPage<Props> = (props) => {
             <Card.Footer isBlurred css={{
                 position: 'absolute',
                 bgBlur: '#f111466',
-                bottom: 0
+                bottom: 0,
+                display: 'flex',
+                justifyContent: 'center'
             }}>
+                <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                    <Button
+                        size="md"
+                        shadow
+                        color="gradient">
+                        Ver
+                    </Button>
+                </Link>
 
             </Card.Footer>
         </Card>

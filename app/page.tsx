@@ -24,6 +24,7 @@ import CardsBanner from '@/components/CardsBanner';
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import InfoCard from '@/components/InfoCard';
+import Link from 'next/link';
 import Slider from "react-slick";
 import { useState } from "react";
 
@@ -189,15 +190,17 @@ export default function Home() {
                 </Text>
 
                 <Col css={{ display: "flex", justifyContent: "start" }}>
-                  <Button
-                    style={{
-                      background: 'black'
-                    }}
-                    size="md"
-                    css={{ width: "25%", marginTop: "10px" }}
-                  >
-                    Comprar la HERO11
-                  </Button>
+                  <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                    <Button
+                      style={{
+                        background: 'black'
+                      }}
+                      size="md"
+                      css={{ width: "25%", marginTop: "10px" }}
+                    >
+                      Comprar la HERO11
+                    </Button>
+                  </Link>
 
                 </Col>
               </Col>
@@ -300,24 +303,18 @@ export default function Home() {
                 </Text>
 
                 <Col css={{ display: "flex", justifyContent: "center" }}>
-                  <Button
-                    style={{
-                      background: 'black'
-                    }}
-                    size="md"
-                    css={{ width: "25%", marginTop: "10px" }}
-                  >
-                    Agregar al carrito
-                  </Button>
-                  <Button
-                    style={{
-                      background: 'black'
-                    }}
-                    size="md"
-                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                  >
-                    Conoce mas
-                  </Button>
+                  <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                    <Button
+                      style={{
+                        background: 'black'
+                      }}
+                      size="md"
+                      css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                    >
+                      Conoce mas
+                    </Button>
+                  </Link>
+
                 </Col>
               </Col>
             </Grid>
@@ -417,26 +414,31 @@ export default function Home() {
                 </Text>
 
                 <Col css={{ display: "flex", justifyContent: "center" }}>
-                  <Button
-                    size="md"
-                    shadow
-                    style={{
-                      background: 'black'
-                    }}
-                    css={{ width: "25%", marginTop: "10px" }}
-                  >
-                    Agregar al carrito
-                  </Button>
-                  <Button
-                    size="md"
-                    shadow
-                    style={{
-                      background: 'black'
-                    }}
-                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                  >
-                    Conoce mas
-                  </Button>
+                  <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                    <Button
+                      size="md"
+                      shadow
+                      style={{
+                        background: 'black'
+                      }}
+                      css={{ width: "25%", marginTop: "10px" }}
+                    >
+                      Agregar al carrito
+                    </Button>
+                  </Link>
+
+                  <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                    <Button
+                      size="md"
+                      shadow
+                      style={{
+                        background: 'black'
+                      }}
+                      css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                    >
+                      Conoce mas
+                    </Button>
+                  </Link>
                 </Col>
               </Col>
             </Grid>
@@ -474,14 +476,16 @@ export default function Home() {
                 <Text weight={"bold"} size={50} css={{ textAlign: "center" }}>
                   COMPARAR CAMARAS
                 </Text>
-                <Button
-                  size="md"
-                  shadow
-                  color="gradient"
-                  css={{ width: "100%", marginTop: "10px" }}
-                >
-                  Mas informacion
-                </Button>
+                <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                  <Button
+                    size="md"
+                    shadow
+                    color="gradient"
+                    css={{ width: "100%", marginTop: "10px" }}
+                  >
+                    Mas informacion
+                  </Button>
+                </Link>
               </Col>
             </Grid>
           </Grid.Container>

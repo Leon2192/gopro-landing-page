@@ -7,6 +7,7 @@ import { AiTwotoneCamera } from 'react-icons/ai'
 import { GiClick } from 'react-icons/gi'
 import { GrConnect } from 'react-icons/gr'
 import InfoCard from '@/components/InfoCard'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -34,15 +35,16 @@ const page = () => {
                             </Text>
                         </Col>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "50%", marginTop: "10px" }}
-                            >
-                                Descargar
-                            </Button>
-
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "50%", marginTop: "10px" }}
+                                >
+                                    Ver productos
+                                </Button>
+                            </Link>
                         </Col>
                     </Col>
                 </Grid>
@@ -67,14 +69,16 @@ const page = () => {
                             Importa fotos y vídeos de tu teléfono, de tu GoPro o de cualquier otra cámara.¹
                         </Text>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                            >
-                                Comparar
-                            </Button>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                                >
+                                    Comparar
+                                </Button>
+                            </Link>
                         </Col>
                     </Col>
                 </Grid>
@@ -91,14 +95,16 @@ const page = () => {
                             La copia de seguridad ilimitada en la nube guarda tus recuerdos preferidos con un 100 % de calidad.²
                         </Text>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                            >
-                                Comparar
-                            </Button>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                                >
+                                    Comparar
+                                </Button>
+                            </Link>
                         </Col>
                     </Col>
                 </Grid>

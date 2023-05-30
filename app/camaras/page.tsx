@@ -7,6 +7,7 @@ import { AiTwotoneCamera } from 'react-icons/ai'
 import { GiClick } from 'react-icons/gi'
 import { GrConnect } from 'react-icons/gr'
 import InfoCard from '@/components/InfoCard'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -54,22 +55,26 @@ const page = () => {
 
                         </Col>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px" }}
-                            >
-                                Comprar HERO11 Black MIni
-                            </Button>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                            >
-                                Comparar
-                            </Button>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px" }}
+                                >
+                                    Comprar HERO11 Black MIni
+                                </Button>
+                            </Link>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                                >
+                                    Comparar
+                                </Button>
+                            </Link>
                         </Col>
                     </Col>
                 </Grid>
@@ -107,22 +112,26 @@ const page = () => {
 
                         </Col>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px" }}
-                            >
-                                Comprar HERO11 Black Mini
-                            </Button>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                            >
-                                Comparar
-                            </Button>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px" }}
+                                >
+                                    Comprar HERO11 Black Mini
+                                </Button>
+                            </Link>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                                >
+                                    Comparar
+                                </Button>
+                            </Link>
                         </Col>
                     </Col>
                 </Grid>
@@ -177,22 +186,26 @@ const page = () => {
 
                         </Col>
                         <Col css={{ display: "flex", justifyContent: "center" }}>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px" }}
-                            >
-                                Comprar HERO11 Black MIni
-                            </Button>
-                            <Button
-                                size="md"
-                                shadow
-                                color="gradient"
-                                css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
-                            >
-                                Comparar
-                            </Button>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px" }}
+                                >
+                                    Comprar HERO11 Black MIni
+                                </Button>
+                            </Link>
+                            <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                                <Button
+                                    size="md"
+                                    shadow
+                                    color="gradient"
+                                    css={{ width: "25%", marginTop: "10px", marginLeft: "$5" }}
+                                >
+                                    Comparar
+                                </Button>
+                            </Link>
                         </Col>
                     </Col>
                 </Grid>

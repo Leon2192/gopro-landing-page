@@ -1,5 +1,6 @@
 import { Button, Card, Col, Row, Text } from '@nextui-org/react'
 
+import Link from 'next/link';
 import type { NextPage } from "next";
 
 interface Props {
@@ -27,16 +28,18 @@ const CardsBanner: NextPage<Props> = (props) => {
                 </Text>
 
                 <Col css={{ display: "flex", justifyContent: "center", marginBottom: '22px', marginTop: '22px' }}>
-                    <Button
-                        style={{
-                            background: 'black'
-                        }}
-                        shadow
-                        size="md"
-                        css={{ width: "25%", marginTop: "10px" }}
-                    >
-                        Comprar ahora
-                    </Button>
+                    <Link href='https://www.shopnow.com.ar/listado/camaras-accesorios/'>
+                        <Button
+                            style={{
+                                background: 'black'
+                            }}
+                            shadow
+                            size="md"
+                            css={{ width: "25%", marginTop: "10px" }}
+                        >
+                            Comprar ahora
+                        </Button>
+                    </Link>
                 </Col>
             </Col>
         </Card>
